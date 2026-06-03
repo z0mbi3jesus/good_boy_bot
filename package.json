@@ -1,0 +1,14 @@
+{
+  "name": "good-boy-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that tracks hidden good boy points and shows top 3 names only.",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.5"
+  }
+}
