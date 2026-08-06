@@ -15,6 +15,8 @@ Rules this bot enforces:
 4. Copy `.env.example` to `.env` and fill in values:
    - `DISCORD_TOKEN`
    - `AUTHORIZED_GIVER_ID`
+   - `DISCLAIMER_TIMER_MS` (optional, defaults to `120000`)
+   - `SERVER_INVITE_LINK` (optional, used by `!gb server`)
 5. Install and run:
 
 ```bash
@@ -26,12 +28,17 @@ npm start
 
 - `!gb help`
 - `!gb give @user <points>` (only the authorized giver can run this)
+- `!gb server`
 - `!gb top`
 - `!gb board`
 - `!gb scores` (authorized giver only)
 - `!gb whoami`
+- `!gb_disclaimer`
 
 Public leaderboard output contains names only, never point amounts.
+
+After successful `!gb give` commands, the bot starts (or resets) a per-channel inactivity timer.
+When no more points are awarded before that timer expires, the bot posts a disclaimer message in that channel.
 
 ## GitHub Repository Checklist
 
