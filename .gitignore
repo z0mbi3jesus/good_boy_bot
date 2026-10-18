@@ -4,9 +4,13 @@ node_modules/
 !.env.example
 
 data.json
+data.json.*
 *.log
 logs/
 
 .DS_Store
 Thumbs.db
 .vscode/
+coverage/
+*.pem
+*.key
